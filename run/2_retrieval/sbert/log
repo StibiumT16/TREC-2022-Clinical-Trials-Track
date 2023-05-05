@@ -1,0 +1,12 @@
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /home/yiteng_tu/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/home/yiteng_tu/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Downloading https://search.maven.org/remotecontent?filepath=uk/ac/gla/dcs/terrierteam/jtreceval/0.0.5/jtreceval-0.0.5-jar-with-dependencies.jar to /home/yiteng_tu/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar...
+/home/yiteng_tu/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar already exists!
+Skipping download.
+Running command: ['java', '-jar', '/home/yiteng_tu/.cache/pyserini/eval/jtreceval-0.0.5-jar-with-dependencies.jar', '-c', '-mndcg_cut.10', '-mP.5', '-mRprec', '-mrecip_rank', '../../data/query/qrels.tsv', '../../run/2_retrieval/sbert/run.tsv']
+Results:
+Rprec                 	all	0.1714
+recip_rank            	all	0.6183
+P_5                   	all	0.4400
+ndcg_cut_10           	all	0.3438

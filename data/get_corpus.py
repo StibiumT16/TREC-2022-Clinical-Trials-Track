@@ -3,7 +3,7 @@ import re
 import json
 from tqdm import tqdm
 
-def get_json(): #for sparse retrieval
+def get_json():
     with open("corpus/corpus.json", "w") as fw:
         for path, dirs, files in tqdm(os.walk("dataset")):
             #print(root, dirs, files)
@@ -21,12 +21,4 @@ def get_json(): #for sparse retrieval
                 json_str = json.dumps({'id' : docid, 'contents' : texts})
                 fw.write(json_str + "\n")
 
-def get_tsv(): #for dense retrieval
-    with open("corpus/corpus.json", "r") as fin, open("corpus.tsv", 'w') as fout:
-        for line in fin:
-            line = json.loads(line)
-            id, content = line['id'], line['contents']
-            fout.write(id + "\t" + content + "\n")
-
 get_json()          
-get_tsv()

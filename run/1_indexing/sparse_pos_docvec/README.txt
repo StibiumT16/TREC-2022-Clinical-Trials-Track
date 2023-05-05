@@ -1,0 +1,1 @@
+inverted indexes for bm25 and qld retrieval
