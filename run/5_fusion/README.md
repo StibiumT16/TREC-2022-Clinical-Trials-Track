@@ -1,9 +1,11 @@
 ### 5. Fusion via RRF / CombSUM / CombMNZ
 bm25 + monoT5-3b & qld + rocchio + monoT5-3b & SBERT + monobert-large
 
-$$RRF(d) = \sum_{r \in R} \frac{1}{k + r(d)} \\
- \\ CombSUM(d) = \sum_{r \in R} normalized\_score(d, r) \\
- CombMNZ(d) = n(d, R) \times \sum_{r \in R} normalized\_score(d, r)$$
+$$RRF(d) = \sum_{r \in R} \frac{1}{k + r(d)}$$
+
+$$CombSUM(d) = \sum_{r \in R} normalized score(d, r)$$
+
+$$CombMNZ(d) = n(d, R) \times \sum_{r \in R} normalized score(d, r)$$
 
 $n(d, r)$ denotes the number of times doc $d$ appears in all ranked lists
 
